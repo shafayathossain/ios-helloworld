@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12CD836A0EA478364EAC3ABE /* Pods_helloworld_helloworldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7E14B10B1CBDFE6764AA02 /* Pods_helloworld_helloworldUITests.framework */; };
 		96BB2906A8443721A1376EDE /* Pods_helloworldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBBEB618A7F5AEF46B282D3 /* Pods_helloworldTests.framework */; };
 		B397295720D13A969944AB9A /* Pods_helloworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9115E4D6D606FEF566DCACC0 /* Pods_helloworld.framework */; };
 		CE2B0319277ADD54000034B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2B0318277ADD54000034B6 /* GoogleService-Info.plist */; };
@@ -16,19 +15,10 @@
 		CEF782AA277ACFDD0031FCC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF782A9277ACFDD0031FCC5 /* Assets.xcassets */; };
 		CEF782AD277ACFDD0031FCC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF782AC277ACFDD0031FCC5 /* Preview Assets.xcassets */; };
 		CEF782B7277ACFDD0031FCC5 /* helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF782B6277ACFDD0031FCC5 /* helloworldTests.swift */; };
-		CEF782C1277ACFDD0031FCC5 /* helloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF782C0277ACFDD0031FCC5 /* helloworldUITests.swift */; };
-		CEF782C3277ACFDD0031FCC5 /* helloworldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF782C2277ACFDD0031FCC5 /* helloworldUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CEF782B3277ACFDD0031FCC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEF7829A277ACFDB0031FCC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEF782A1277ACFDB0031FCC5;
-			remoteInfo = helloworld;
-		};
-		CEF782BD277ACFDD0031FCC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEF7829A277ACFDB0031FCC5 /* Project object */;
 			proxyType = 1;
@@ -51,7 +41,6 @@
 		CEF782AC277ACFDD0031FCC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEF782B2277ACFDD0031FCC5 /* helloworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF782B6277ACFDD0031FCC5 /* helloworldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloworldTests.swift; sourceTree = "<group>"; };
-		CEF782BC277ACFDD0031FCC5 /* helloworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF782C0277ACFDD0031FCC5 /* helloworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloworldUITests.swift; sourceTree = "<group>"; };
 		CEF782C2277ACFDD0031FCC5 /* helloworldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloworldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCE07A5A2328ED69EEC8F35F /* Pods-helloworldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloworldTests.debug.xcconfig"; path = "Target Support Files/Pods-helloworldTests/Pods-helloworldTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,14 +63,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BB2906A8443721A1376EDE /* Pods_helloworldTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEF782B9277ACFDD0031FCC5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12CD836A0EA478364EAC3ABE /* Pods_helloworld_helloworldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +100,6 @@
 			children = (
 				CEF782A2277ACFDB0031FCC5 /* helloworld.app */,
 				CEF782B2277ACFDD0031FCC5 /* helloworldTests.xctest */,
-				CEF782BC277ACFDD0031FCC5 /* helloworldUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,26 +191,6 @@
 			productReference = CEF782B2277ACFDD0031FCC5 /* helloworldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CEF782BB277ACFDD0031FCC5 /* helloworldUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEF782CC277ACFDD0031FCC5 /* Build configuration list for PBXNativeTarget "helloworldUITests" */;
-			buildPhases = (
-				34AC167BE4CEC0B493486BDA /* [CP] Check Pods Manifest.lock */,
-				CEF782B8277ACFDD0031FCC5 /* Sources */,
-				CEF782B9277ACFDD0031FCC5 /* Frameworks */,
-				CEF782BA277ACFDD0031FCC5 /* Resources */,
-				BDB758DB90BB619C60138ED8 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEF782BE277ACFDD0031FCC5 /* PBXTargetDependency */,
-			);
-			name = helloworldUITests;
-			productName = helloworldUITests;
-			productReference = CEF782BC277ACFDD0031FCC5 /* helloworldUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,10 +205,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					CEF782B1277ACFDD0031FCC5 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = CEF782A1277ACFDB0031FCC5;
-					};
-					CEF782BB277ACFDD0031FCC5 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = CEF782A1277ACFDB0031FCC5;
 					};
@@ -269,7 +225,6 @@
 			targets = (
 				CEF782A1277ACFDB0031FCC5 /* helloworld */,
 				CEF782B1277ACFDD0031FCC5 /* helloworldTests */,
-				CEF782BB277ACFDD0031FCC5 /* helloworldUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,13 +241,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEF782B0277ACFDD0031FCC5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEF782BA277ACFDD0031FCC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,28 +272,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		34AC167BE4CEC0B493486BDA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-helloworld-helloworldUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		97A7C7E16019D7059F0BCD18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,23 +292,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDB758DB90BB619C60138ED8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloworld-helloworldUITests/Pods-helloworld-helloworldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloworld-helloworldUITests/Pods-helloworld-helloworldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloworld-helloworldUITests/Pods-helloworld-helloworldUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA436E5ACFD7A519612A7664 /* [CP] Embed Pods Frameworks */ = {
@@ -422,15 +331,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF782B8277ACFDD0031FCC5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEF782C3277ACFDD0031FCC5 /* helloworldUITestsLaunchTests.swift in Sources */,
-				CEF782C1277ACFDD0031FCC5 /* helloworldUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -438,11 +338,6 @@
 			isa = PBXTargetDependency;
 			target = CEF782A1277ACFDB0031FCC5 /* helloworld */;
 			targetProxy = CEF782B3277ACFDD0031FCC5 /* PBXContainerItemProxy */;
-		};
-		CEF782BE277ACFDD0031FCC5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEF782A1277ACFDB0031FCC5 /* helloworld */;
-			targetProxy = CEF782BD277ACFDD0031FCC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -677,52 +572,6 @@
 			};
 			name = Release;
 		};
-		CEF782CD277ACFDD0031FCC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35C9CEE9343DADE15121F816 /* Pods-helloworld-helloworldUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shafayat.helloworldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = helloworld;
-			};
-			name = Debug;
-		};
-		CEF782CE277ACFDD0031FCC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AF73F6B7514B287FC7D1248 /* Pods-helloworld-helloworldUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shafayat.helloworldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = helloworld;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -749,15 +598,6 @@
 			buildConfigurations = (
 				CEF782CA277ACFDD0031FCC5 /* Debug */,
 				CEF782CB277ACFDD0031FCC5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEF782CC277ACFDD0031FCC5 /* Build configuration list for PBXNativeTarget "helloworldUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEF782CD277ACFDD0031FCC5 /* Debug */,
-				CEF782CE277ACFDD0031FCC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
