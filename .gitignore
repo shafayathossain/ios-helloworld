@@ -91,5 +91,4 @@ Fastlane/.env.secret
 iOSInjectionProject/
 
 ## Others
-GoogleService-info.plist
 fastlane/.env.default
