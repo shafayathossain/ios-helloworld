@@ -92,3 +92,4 @@ iOSInjectionProject/
 
 ## Others
 GoogleService-info.plist
+fastlane/.env.default
