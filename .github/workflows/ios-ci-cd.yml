@@ -37,7 +37,7 @@ jobs:
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
 
       - name: Checkout git repo
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
