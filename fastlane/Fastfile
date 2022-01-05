@@ -4,7 +4,21 @@ buildName = "hello_world"
 
 before_all do
 
-    
+
+
+end
+
+lane :release do
+
+    update_version_number()
+
+    install_pods()
+
+    unit_test()
+
+    build_project()
+
+    distribute_to_testflight()
 
 end
 

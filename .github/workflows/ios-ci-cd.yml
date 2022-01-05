@@ -51,6 +51,15 @@ jobs:
           bundle config set --local deployment 'true'
           bundle install
 
+      - name: test and distribute to testflight using fastlane
+        env:
+          APPLE_USERNAME: ${{ secrets.APPLE_USERNAME }}
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+        run: |
+          export LC_ALL=en_US.UTF-8
+          export LANG=en_US.UTF-8
+          
+          bundle exec fastlane release
 
       
 
