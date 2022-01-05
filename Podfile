@@ -26,8 +26,4 @@ target 'helloworld' do
     # Pods for testing
   end
 
-  target 'helloworldUITests' do
-    # Pods for testing
-  end
-
 end
