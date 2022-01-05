@@ -7,6 +7,7 @@ jobs:
     
     steps:
       
+        # Run `base64 filename | pbcopy` to generate Base64 string of a file
       - name: Install certificates 
         env:
           BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
