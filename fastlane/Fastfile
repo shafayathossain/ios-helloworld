@@ -1,4 +1,12 @@
+schemeName = "helloworld"
+buildPath = "fastlane/build/"
+buildName = "hello_world"
 
+before_all do
+
+    
+
+end
 
 # Update version number
 lane :update_version_number do
@@ -22,7 +30,7 @@ lane :unit_test do
     scan(
         workspace: "helloworld.xcworkspace",
         device: "iPhone 12",
-        scheme: "helloworld"
+        scheme: schemeName
     )
 
 end
@@ -41,8 +49,8 @@ lane :build_project do
         },
         include_symbols: true,
         output_directory: "fastlane/build/",
-        output_name: "hello_world",
-        scheme: "helloworld",
+        output_name: buildName,
+        scheme: schemeName,
         silent: false,
         workspace: "helloworld.xcworkspace"
     )
@@ -55,8 +63,8 @@ lane :distribute_to_testflight do
 
     upload_to_testflight(
         app_identifier: "com.shafayat.helloworld",
-        ipa: "fastlane/build/hello_world.ipa",
-        username: "shafayat@bs-23.net",
+        ipa: buildPath + buildName + ".ipa",
+        username: ENV['APPLE_USERNAME'],
         skip_waiting_for_build_processing: true,
         skip_submission: true, # Must for app specific password
         apple_id: "1602325618"  # Must for app specific password
@@ -80,6 +88,6 @@ end
 after_all do
 
     # Push updates to git repo
-
+    push_to_git_remote()
     
 end
