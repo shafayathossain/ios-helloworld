@@ -38,7 +38,7 @@ jobs:
 
       - name: Checkout git repo
         uses: action/checkout@v2
-         with:
+        with:
           fetch-depth: 0
 
       - name: Setup ruby
@@ -51,6 +51,6 @@ jobs:
           bundle config set --local deployment 'true'
           bundle install
 
-      - name: Build, test and upload to testflight using fastlane
+
       
 
