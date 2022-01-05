@@ -1,0 +1,85 @@
+
+
+# Update version number
+lane :update_version_number do
+
+    increment_build_number()
+
+end
+# Pod install
+lane :install_pods do
+
+    cocoapods(
+        clean_install: false,
+        use_bundle_exec: true
+    )
+
+end
+
+# Unit test
+lane :unit_test do
+
+    scan(
+        workspace: "helloworld.xcworkspace",
+        device: "iPhone 12",
+        scheme: "helloworld"
+    )
+
+end
+
+# Build project
+lane :build_project do
+
+    gym(
+        build_path: "fastlane/build/",
+        clean: true,
+        export_method: "app-store",
+        export_options: {
+            provisioningProfile: {
+                "com.shafayat.helloworld": "match AppStore com.shafayat.helloworld"
+            }
+        },
+        include_symbols: true,
+        output_directory: "fastlane/build/",
+        output_name: "hello_world",
+        scheme: "helloworld",
+        silent: false,
+        workspace: "helloworld.xcworkspace"
+    )
+
+end
+
+# Upload to test flight
+# App specific password trun-bmxl-xatl-ruqn
+lane :distribute_to_testflight do
+
+    upload_to_testflight(
+        app_identifier: "com.shafayat.helloworld",
+        ipa: "fastlane/build/hello_world.ipa",
+        username: "shafayat@bs-23.net",
+        skip_waiting_for_build_processing: true,
+        skip_submission: true, # Must for app specific password
+        apple_id: "1602325618"  # Must for app specific password
+    )
+
+end
+
+lane :push_to_remote do
+
+    git_add(path: "*")
+    git_commit(
+        path: "*",
+        message: "Release to testflight with updating version number"
+    )
+    push_to_git_remote(
+        remote: "origin"
+    )
+
+end
+
+after_all do
+
+    # Push updates to git repo
+
+    
+end
